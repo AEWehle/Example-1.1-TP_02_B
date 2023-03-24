@@ -13,10 +13,12 @@ int main()
 
     while (true) {
         if ( gasDetector == ON ) {
+            printf("%s\n", "se detecta gas, alarma sonando");
             alarmLed = ON;
         }
         
         if ( gasDetector == OFF ) {
+            printf("%s\n", "no se detecta gas, alarma apagada");
             alarmLed = OFF;
         }
     }
