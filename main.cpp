@@ -1,11 +1,15 @@
 #include "mbed.h"
 #include "arm_book_lib.h"
 
+
+
 int main()
 {
-    DigitalIn gasDetector(D2);
+    //DigitalIn gasDetector(D2);
+    gpio_init_in(&gpio, PF_15);
 
-    DigitalOut alarmLed(LED1);
+    //DigitalOut alarmLed(LED1);
+    gpio_init_in(&gpio, PB_0);
 
     gasDetector.mode(PullDown);
 
